@@ -1,5 +1,17 @@
 # Cyber Kill Chain
 
+An educational overview of the seven stages commonly used to describe a cyberattack.
+
+```mermaid
+flowchart LR
+    R[1. Reconnaissance] --> W[2. Weaponization]
+    W --> D[3. Delivery]
+    D --> E[4. Exploitation]
+    E --> I[5. Installation]
+    I --> C[6. Command and Control]
+    C --> A[7. Actions on Objectives]
+```
+
 The Cyber Kill Chain describes the stages of a typical cyberattack, from initial research through the attacker’s final objective.
 
 ## 1. Reconnaissance
@@ -61,3 +73,23 @@ This is the final stage. The attacker carries out their actual goal, such as:
 - Stealing confidential information
 - Encrypting files using ransomware
 - Disrupting services
+
+## Defensive Controls
+
+Defenders can reduce risk at every stage of the Cyber Kill Chain:
+
+| Stage | Example defensive controls |
+|---|---|
+| Reconnaissance | Limit public exposure, use threat intelligence, monitor for suspicious scanning and data collection |
+| Weaponization | Analyze suspicious artifacts and keep endpoint and email security protections updated |
+| Delivery | Filter email attachments and links, train users, restrict external media, and inspect web traffic |
+| Exploitation | Apply patches promptly, enable exploit mitigations, and use least-privilege access |
+| Installation | Block unauthorized software, use application control, and monitor for persistence mechanisms |
+| Command and Control | Detect unusual network connections, filter domains and IP addresses, and isolate suspicious systems |
+| Actions on Objectives | Restrict sensitive access, segment networks, protect backups, and monitor for data exfiltration |
+
+## Further Reading
+
+- [MITRE ATT&CK](https://attack.mitre.org/)
+- [CISA Cybersecurity Resources](https://www.cisa.gov/topics/cybersecurity-best-practices)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
